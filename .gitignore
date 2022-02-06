@@ -1,0 +1,25 @@
+# dependencies
+node_modules
+
+# testing
+/coverage
+test
+
+# misc
+.DS_Store
+.idea
+.github
+
+# cache
+*.cache
+.eslintcache
+
+# logs
+*.log
+yarn.error
+
+# temp
+temp
+
+# local
+test-environment
