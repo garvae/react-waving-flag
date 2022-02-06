@@ -6,7 +6,7 @@ function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'defau
 
 var React = require('react');
 var React__default = _interopDefault(React);
-var useDebouncedCallback = _interopDefault(require('use-debounce/esm/useDebouncedCallback'));
+var useDebounce = require('use-debounce');
 
 var isClient = typeof window === 'object';
 /**
@@ -107,7 +107,7 @@ var PieChart = function PieChart(props) {
   var strokeDasharray = radius * Math.PI * 2;
   /* prevent unnecessary re-renders */
 
-  var updateSizeDebounced = useDebouncedCallback(function (newSize) {
+  var updateSizeDebounced = useDebounce.useDebouncedCallback(function (newSize) {
     if (newSize !== size) {
       setSize(newSize);
     }

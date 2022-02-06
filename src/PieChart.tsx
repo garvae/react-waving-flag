@@ -4,7 +4,7 @@ import React, {
   useMemo,
   useState,
 } from 'react';
-import useDebouncedCallback from 'use-debounce/esm/useDebouncedCallback';
+import { useDebouncedCallback } from 'use-debounce';
 
 export type TDataItem = {
   color: string;

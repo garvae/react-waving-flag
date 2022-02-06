@@ -1,5 +1,5 @@
 import React, { useState, useMemo, useCallback, useEffect } from 'react';
-import useDebouncedCallback from 'use-debounce/esm/useDebouncedCallback';
+import { useDebouncedCallback } from 'use-debounce';
 
 var isClient = typeof window === 'object';
 /**
