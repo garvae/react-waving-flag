@@ -4,7 +4,8 @@ import React, {
   useMemo,
   useState,
 } from 'react';
-import { useDebouncedCallback } from 'use-debounce';
+
+import { debounce } from './utils/debounce';
 
 export type TDataItem = {
   color: string;
@@ -132,7 +133,7 @@ export const PieChart = (props: TPieChartProps): JSX.Element => {
   const strokeDasharray = radius * Math.PI * 2;
 
   /* prevent unnecessary re-renders */
-  const updateSizeDebounced = useDebouncedCallback((newSize: number) => {
+  const updateSizeDebounced = debounce((newSize: number) => {
     if (newSize !== size){
       setSize(newSize);
     }

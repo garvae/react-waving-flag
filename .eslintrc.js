@@ -145,29 +145,6 @@ const commonRules = {
       'newlines-between': 'always',
     },
   ],
-  'no-restricted-imports': [
-    'error',
-    {
-      patterns: [
-        '../**/assets/*',
-        '*/assets/*',
-        '../**/common/*',
-        '*/common/*',
-        '../**/graphql/*',
-        '*/graphql/*',
-        '../**/redux/*',
-        '*/redux/*',
-        '../**/routes/*',
-        '*/routes/*',
-        '../**/styles/*',
-        '*/styles/*',
-        '../**/utils/*',
-        '*/utils/*',
-        '../**/variables/*',
-        '*/variables/*',
-      ],
-    },
-  ],
 
   /* --- react --- */
   'react-hooks/exhaustive-deps': 0,

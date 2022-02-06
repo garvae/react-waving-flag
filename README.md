@@ -131,10 +131,6 @@ const App = () => {
 };
 ```
 
-## Dependencies
-
-- [use-debounce](https://github.com/xnimorz/use-debounce) - Prevents unnecessary re-renders
-
 ## Author
 
 🙋‍♂️ **Vova_Garvae**

@@ -6,7 +6,22 @@ function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'defau
 
 var React = require('react');
 var React__default = _interopDefault(React);
-var useDebounce = require('use-debounce');
+
+var debounce = function debounce(cb, wait) {
+  var timer;
+  return function () {
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    clearTimeout(timer);
+    return new Promise(function (resolve) {
+      timer = setTimeout(function () {
+        return resolve(cb.apply(void 0, args));
+      }, wait);
+    });
+  };
+};
 
 var isClient = typeof window === 'object';
 /**
@@ -107,7 +122,7 @@ var PieChart = function PieChart(props) {
   var strokeDasharray = radius * Math.PI * 2;
   /* prevent unnecessary re-renders */
 
-  var updateSizeDebounced = useDebounce.useDebouncedCallback(function (newSize) {
+  var updateSizeDebounced = debounce(function (newSize) {
     if (newSize !== size) {
       setSize(newSize);
     }
