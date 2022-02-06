@@ -35,7 +35,7 @@
     "preprepare": "yarn lint:js",
     "prepare": "tsdx build",
     "size": "size-limit",
-    "lint:js": "cross-env LINT=true eslint src/**/*.{js,jsx,ts,tsx} --fix",
+    "lint:js": "cross-env LINT=true eslint src/**/*.{ts,tsx} --fix",
     "analyze": "size-limit"
   },
   "lint-staged": {
@@ -68,6 +68,9 @@
   "module": "dist/react-pie-chart.esm.js",
   "dependencies": {
     "use-debounce": "^7.0.1"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "devDependencies": {
     "@babel/cli": "^7.17.0",
