@@ -12,7 +12,7 @@ Lightweight react "pie" chart.
 ### Variants
 
 <p align="center">
-    <img src="https://github.com/garvae/react-pie-chart/raw/main/public/github/variants.png" alt="react-pie-chart variants" width="100%" height="auto">
+    <img src="https://raw.githubusercontent.com/garvae/react-pie-chart/master/public/github/variants.png" alt="react-pie-chart variants" width="100%" height="auto">
 </p>  
 
 
