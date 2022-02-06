@@ -66,16 +66,6 @@
   "name": "@garvae/react-pie-chart",
   "author": "Vova Garvae",
   "module": "dist/react-pie-chart.esm.js",
-  "size-limit": [
-    {
-      "path": "dist/react-pie-chart.cjs.production.min.js",
-      "limit": "10 KB"
-    },
-    {
-      "path": "dist/react-pie-chart.esm.js",
-      "limit": "10 KB"
-    }
-  ],
   "dependencies": {
     "use-debounce": "^7.0.1"
   },
@@ -90,7 +80,6 @@
     "@getify/eslint-plugin-proper-arrows": "^11.0.3",
     "@getify/eslint-plugin-proper-ternary": "^3.1.1",
     "@rollup/plugin-replace": "^3.0.1",
-    "@size-limit/preset-small-lib": "^7.0.8",
     "@types/react": "^17.0.39",
     "@types/react-dom": "^17.0.11",
     "@typescript-eslint/eslint-plugin": "^5.10.2",
@@ -128,7 +117,6 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "rollup-plugin-analyzer": "^4.0.0",
-    "size-limit": "^7.0.8",
     "ts-loader": "^9.2.6",
     "ts-node": "^10.4.0",
     "tsdx": "^0.14.1",
