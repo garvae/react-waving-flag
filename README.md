@@ -137,7 +137,7 @@ const App = () => {
 
 - Facebook: [@garvae](https://www.facebook.com/garvae)
 - LinkedIn: [@garvae](https://linkedin.com/in/garvae)
-- Twitter: [@garvae](https://twitter.com/garvae)
+- Twitter: [@vgarvae](https://twitter.com/vgarvae)
 - Github: [@garvae](https://github.com/garvae)
 
 
