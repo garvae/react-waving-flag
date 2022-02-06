@@ -8,7 +8,6 @@ test
 # misc
 .DS_Store
 .idea
-.github
 
 # cache
 *.cache
