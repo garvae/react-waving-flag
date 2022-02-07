@@ -26,11 +26,11 @@ Lightweight react "pie" chart.
 ### Installation
 
 ```sh
-npm install @garvae/react-pie-hart
+npm install @garvae/react-pie-chart
 ```
 or
 ```sh
-yarn add @garvae/react-pie-hart
+yarn add @garvae/react-pie-chart
 ```
 
 
