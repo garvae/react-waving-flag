@@ -22,6 +22,7 @@ export type TPieChartCommonProps = {
   donutHoleColor?: string;
   donutSegmentClassName?: string;
   fontSize?: string;
+  maxSize?: number;
   minSize?: number;
   text?: string;
   textClassName?: string;
@@ -63,6 +64,7 @@ const isClient = typeof window === 'object';
  * @prop {string} [donutHoleColor='#ffffff'] - Center circle color
  * @prop {string} [donutSegmentClassName] - Circle segment className
  * @prop {string} [fontSize] - Center circle text size. Must be a CSS 'fontSize' type: '<number>px'
+ * @prop {number} [maxSize] - Chart maximum size
  * @prop {number} [minSize] - Chart minimum size
  * @prop {React.RefObject<HTMLDivElement>} [parentRef] - REQUIRED if 'size' prop isn't given. Ref to container element
  * @prop {string} [text]
@@ -97,7 +99,7 @@ const isClient = typeof window === 'object';
  * };
  * ```
  */
-export const PieChart = (props: TPieChartProps): JSX.Element => {
+const PieChart = (props: TPieChartProps): JSX.Element => {
 
   const {
     className,
@@ -107,6 +109,7 @@ export const PieChart = (props: TPieChartProps): JSX.Element => {
     donutHoleColor = '#ffffff',
     donutSegmentClassName,
     fontSize,
+    maxSize,
     minSize,
     parentRef,
     size: sizeProp,
@@ -173,6 +176,8 @@ export const PieChart = (props: TPieChartProps): JSX.Element => {
       if (s){
         if (minSize && (minSize >= s)) {
           updateSize(minSize);
+        } else if (maxSize && (maxSize <= s)) {
+          updateSize(maxSize);
         } else {
           updateSize(s);
         }
@@ -291,3 +296,5 @@ export const PieChart = (props: TPieChartProps): JSX.Element => {
     </svg>
   );
 };
+
+export default PieChart;

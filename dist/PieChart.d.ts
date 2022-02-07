@@ -13,6 +13,7 @@ export declare type TPieChartCommonProps = {
     donutHoleColor?: string;
     donutSegmentClassName?: string;
     fontSize?: string;
+    maxSize?: number;
     minSize?: number;
     text?: string;
     textClassName?: string;
@@ -48,6 +49,7 @@ export declare type TPieChartProps = TPieChartWithRefProps | TPieChartWithNoRefP
  * @prop {string} [donutHoleColor='#ffffff'] - Center circle color
  * @prop {string} [donutSegmentClassName] - Circle segment className
  * @prop {string} [fontSize] - Center circle text size. Must be a CSS 'fontSize' type: '<number>px'
+ * @prop {number} [maxSize] - Chart maximum size
  * @prop {number} [minSize] - Chart minimum size
  * @prop {React.RefObject<HTMLDivElement>} [parentRef] - REQUIRED if 'size' prop isn't given. Ref to container element
  * @prop {string} [text]
@@ -82,4 +84,5 @@ export declare type TPieChartProps = TPieChartWithRefProps | TPieChartWithNoRefP
  * };
  * ```
  */
-export declare const PieChart: (props: TPieChartProps) => JSX.Element;
+declare const PieChart: (props: TPieChartProps) => JSX.Element;
+export default PieChart;

@@ -43,6 +43,7 @@ var isClient = typeof window === 'object';
  * @prop {string} [donutHoleColor='#ffffff'] - Center circle color
  * @prop {string} [donutSegmentClassName] - Circle segment className
  * @prop {string} [fontSize] - Center circle text size. Must be a CSS 'fontSize' type: '<number>px'
+ * @prop {number} [maxSize] - Chart maximum size
  * @prop {number} [minSize] - Chart minimum size
  * @prop {React.RefObject<HTMLDivElement>} [parentRef] - REQUIRED if 'size' prop isn't given. Ref to container element
  * @prop {string} [text]
@@ -88,6 +89,7 @@ var PieChart = function PieChart(props) {
       donutHoleColor = _props$donutHoleColor === void 0 ? '#ffffff' : _props$donutHoleColor,
       donutSegmentClassName = props.donutSegmentClassName,
       fontSize = props.fontSize,
+      maxSize = props.maxSize,
       minSize = props.minSize,
       parentRef = props.parentRef,
       sizeProp = props.size,
@@ -160,6 +162,8 @@ var PieChart = function PieChart(props) {
       if (s) {
         if (minSize && minSize >= s) {
           updateSize(minSize);
+        } else if (maxSize && maxSize <= s) {
+          updateSize(maxSize);
         } else {
           updateSize(s);
         }

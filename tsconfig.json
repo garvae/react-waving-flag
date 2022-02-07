@@ -9,7 +9,7 @@
     "resolveJsonModule": true,
     "strictNullChecks": true,
     "strictPropertyInitialization": false,
-    "target": "es5",
+    "target": "es6",
     "baseUrl": "src",
     "paths": {
       "tslib" : ["node_modules/tslib/tslib.d.ts"]

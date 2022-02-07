@@ -19,21 +19,25 @@
   },
   "license": "MIT",
   "main": "dist/index.js",
+  "umd:main": "dist/index.js",
+  "module": "dist/react-pie-chart.esm.js",
   "typings": "dist/index.d.ts",
   "files": [
-    "dist",
-    "src"
+    "dist"
   ],
   "engines": {
     "node": ">=10"
   },
   "scripts": {
+    "generate:packagejosn": "node generate-package-json.js",
     "start": "tsdx watch",
     "prebuild": "yarn lint:js",
     "build": "tsdx build",
+    "postbuild": "yarn generate:packagejosn",
     "lint": "tsdx lint",
     "preprepare": "yarn lint:js",
     "prepare": "tsdx build",
+    "postprepare": "yarn generate:packagejosn",
     "size": "size-limit",
     "lint:js": "cross-env LINT=true eslint src/**/*.{ts,tsx} --fix",
     "analyze": "size-limit"
@@ -65,7 +69,6 @@
   },
   "name": "@garvae/react-pie-chart",
   "author": "Vova Garvae",
-  "module": "dist/react-pie-chart.esm.js",
   "publishConfig": {
     "access": "public"
   },
