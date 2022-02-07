@@ -61,7 +61,7 @@ yarn add @garvae/react-pie-chart
 | --- | --- | --- | --- |
 | className | <code>string</code> |  | SVG className |
 | donutHoleClassName | <code>string</code> |  | Center circle className |
-| donutHoleColor | <code>string</code> | <code>&quot;&#x27;#ffffff&#x27;&quot;</code> | Center circle color |
+| donutHoleColor | <code>string</code> | <code>&quot;#ffffff&quot;</code> | Center circle color |
 | donutSegmentClassName | <code>string</code> |  | Circle segment className |
 | fontSize | <code>string</code> |  | Center circle text size. Must be a CSS 'fontSize' type: '<number>px' |
 | minSize | <code>number</code> |  | Chart minimum size |
