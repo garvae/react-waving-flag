@@ -99,7 +99,7 @@ const isClient = typeof window === 'object';
  * };
  * ```
  */
-const PieChart = (props: TPieChartProps): JSX.Element => {
+export const PieChart = (props: TPieChartProps): JSX.Element => {
 
   const {
     className,
@@ -296,5 +296,3 @@ const PieChart = (props: TPieChartProps): JSX.Element => {
     </svg>
   );
 };
-
-export default PieChart;

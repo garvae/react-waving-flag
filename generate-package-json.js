@@ -14,7 +14,15 @@ try {
 
   const distPackageJsonPath = 'dist/package.json'
 
-  const newJsonData = JSON.stringify(parsed, null, 2);
+  const newJson = {
+    ...parsed,
+    "main": "index.js",
+    "umd:main": "index.js",
+    "module": "react-pie-chart.esm.js",
+    "typings": "index.d.ts",
+  }
+
+  const newJsonData = JSON.stringify(newJson, null, 2);
 
   if (fs.existsSync(distPackageJsonPath)) {
     fs.unlinkSync(distPackageJsonPath);

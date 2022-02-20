@@ -1,33 +1,31 @@
 {
-  "include": ["src", "test"],
+  "include": ["src"],
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
-    "isolatedModules": true,
-    "jsx": "react",
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "noImplicitAny": true,
-    "resolveJsonModule": true,
-    "strictNullChecks": true,
-    "strictPropertyInitialization": false,
-    "target": "es6",
     "baseUrl": "src",
-    "paths": {
-      "tslib" : ["node_modules/tslib/tslib.d.ts"]
-    },
     "declaration": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "importHelpers": true,
+    "isolatedModules": true,
+    "jsx": "react",
+    "lib": ["dom", "dom.iterable", "esnext"],
     "module": "esnext",
     "moduleResolution": "node",
     "noEmit": true,
     "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
     "noImplicitReturns": false,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
+    "paths": {"tslib" : ["node_modules/tslib/tslib.d.ts"]},
+    "resolveJsonModule": true,
     "rootDir": "src",
     "skipLibCheck": true,
     "sourceMap": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": false,
+    "target": "es6",
     "strict": true
   }
 }

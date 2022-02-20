@@ -1,0 +1,41 @@
+{
+  "version": "1.0.7",
+  "description": "Lightweight react \"pie\" chart",
+  "keywords": [
+    "react",
+    "pie",
+    "pie-chart",
+    "chart"
+  ],
+  "homepage": "https://github.com/garvae/react-pie-chart",
+  "funding": {
+    "url": "https://ko-fi.com/garvae"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/garvae/react-pie-chart"
+  },
+  "bugs": {
+    "url": "https://github.com/garvae/react-pie-chart/issues"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "umd:main": "index.js",
+  "module": "react-pie-chart.esm.js",
+  "typings": "index.d.ts",
+  "files": [
+    "*.d.ts",
+    "dist"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "peerDependencies": {
+    "react": ">=16"
+  },
+  "name": "@garvae/react-pie-chart",
+  "author": "Vova Garvae",
+  "publishConfig": {
+    "access": "public"
+  }
+}

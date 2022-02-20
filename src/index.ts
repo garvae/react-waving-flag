@@ -1,3 +1,2 @@
-import PieChart from './PieChart';
-
-export default PieChart;
+import { PieChart } from './PieChart';
+module.exports = PieChart;
