@@ -1,8 +1,29 @@
+# DEPRECATED
+
+<br/>
+
+⛔ **This package has been deprecated** and is no longer supported
+because the solutions used in this package do not meet quality standards
+and are not efficient enough to implement such tasks.
+
+<br/>
+
+<hr/>
+
+
 # react-waving-flag
 
-### Project description
 A simple animated waving flag from a jpg/png image
- 
+
+
+---
+
+<p align="center">
+    <img src="https://github.com/garvae/react-waving-flag/blob/master/public/github/gh-cover.svg?raw=true" alt="react-waving-flag cover" width="100%" height="auto">
+</p> 
+
+---
+
 ### Features
  - lightweight
  - can be shown from both left and right sides of the screen
@@ -63,18 +84,71 @@ const App = () => {
 };
 ```
 
-## Author
 
-🙋‍♂️ **Vova_Garvae**
+## 🤝 Contributions
 
-- Facebook: [@garvae](https://www.facebook.com/garvae)
-- LinkedIn: [@garvae](https://linkedin.com/in/garvae)
-- Twitter: [@vgarvae](https://twitter.com/vgarvae)
-- Github: [@garvae](https://github.com/garvae)
+🤝 Contributions, issues and feature requests are welcome! <br/>
+Feel free to check [issues page][issue] and [pull request page][pr].
+
+❤️ **Give a** ⭐ **if you like this project!**
+
+<br/>
+
+## 📞 Contact me
+
+### 🌐 [Contact page][garvae]
+
+### 🔳 QR code
+
+<div style="background-color: white; display: inline-block; margin-top: 2em; margin-bottom: 2em">
+    <img src="https://github.com/garvae/assets/blob/master/assets/img/garvae-contacts.png?raw=true" alt="contact me" width="300px" height="300px">
+</div>
+
+### 🔗 Links
+
+- [**E-mail**][email]
+- [**Telegram**][telegram]
+- [**Facebook**][facebook]
+- [**Instagram**][instagram]
+- [**LinkedIn**][linkedin]
+- [**GitHub**][github]
+
+<br/>
+
+## 🚀 Mentoring
+
+**If you want to grow** 🚀 **fast in front-end development - [contact me!][garvae]**  🙋‍♂
+
+<br/>
+
+## 📄 License
+
+[See license in the "**LICENCE**" file][license]
+
+[//]: # (------------------------------------------------------------------)
+[//]: # (------------------------- Document links -------------------------)
+[//]: # (------------------------------------------------------------------)
+
+[//]: # (--------------------------- repo links ---------------------------)
 
 
-## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://www.github.com/garvae/react-waving-flag/issues).
+[//]: # (-------------------------- common links --------------------------)
 
+[issue]:https://github.com/garvae/react-waving-flag/issues
+[pr]:https://github.com/garvae/react-waving-flag/pulls
+[repo]:https://github.com/garvae/react-waving-flag
+[license]:https://github.com/garvae/react-waving-flag/blob/master/LICENSE?raw=true
 
+[//]: # (---------------------------- contacts ----------------------------)
+
+[garvae]:https://sprd.li/4wr38watys
+[email]:vgarvae@gmail.com
+[telegram]:https://t.me/garvae
+[facebook]:https://www.facebook.com/garvae
+[instagram]:https://www.instagram.com/garvae
+[linkedin]:https://linkedin.com/in/garvae
+[github]:https://github.com/garvae
+
+[//]: # (------------------------------------------------------------------)
+[//]: # (------------------------------------------------------------------)

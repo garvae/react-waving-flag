@@ -1,5 +1,6 @@
 {
-  "version": "1.0.9",
+  "version": "1.1.0-deprecated",
+  "deprecated": true,
   "description": "A simple animated waving flag from a jpg/png image",
   "keywords": [
     "component",
